@@ -1,0 +1,212 @@
+/* reset */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.5;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+/************************** farver ***********************/
+:root {
+  --BackgroundColor: #f9f1dc;
+  --HeaderFooterColor: #3c55be;
+  --CardColor: #e8e3f2;
+  --ButtonColor: #1b3d2f;
+  --SingeviewBoxColor: #f2dd93;
+  --PlumColor: #561833;
+}
+
+/******************************* burgermenu ********************/
+
+/* styling af burgermenu streger, og gør burgermenuen usynlig i desktop */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--PlumColor);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  /* burgermenuen når den er foldet ud */
+  nav.active .menu {
+    display: block;
+    background-color: var(--HeaderFooterColor);
+    position: absolute;
+    border: 1px solid var(--PlumColor);
+    top: 80px;
+    right: 10px;
+    width: 40%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 10px;
+  }
+}
+
+/************************** fonte ***********************/
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.paytone-one-regular {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/************************** global styling ***********************/
+
+/* header */
+.logo {
+  width: 80px;
+  height: auto;
+  align-items: center;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: var(--HeaderFooterColor);
+  padding: 20px;
+  border-bottom: 0.5px solid var(--PlumColor);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav {
+  align-content: center;
+}
+
+.logotype {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  color: var(--PlumColor);
+}
+
+/* footer */
+footer {
+  background-color: var(--HeaderFooterColor);
+  padding: 30px;
+}
+
+/* body */
+body {
+  background-color: var(--BackgroundColor);
+}
+
+@media (min-width: 800px) {
+  /* header */
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    padding: 20px;
+  }
+
+  /* HUSK sæt "spis nu" i midten */
+  .logotype {
+    font-size: 4.5rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 108px;
+  }
+}
