@@ -76,3 +76,29 @@
   justify-content: center;
   margin-bottom: 200px;
 }
+
+/************************************* produktliste ***********************************/
+
+.productlist_container {
+  margin-block: 50px;
+  margin-inline: 25px;
+  padding: 25px;
+}
+
+.product {
+  padding: 30px;
+  background-color: var(--CardColor);
+}
+
+.product h1 {
+  margin-block: 20px;
+  font-family: "Paytone One";
+}
+
+@media (min-width: 800px) {
+  .productlist_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
