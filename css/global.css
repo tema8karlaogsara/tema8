@@ -173,10 +173,20 @@ nav {
   align-content: center;
 }
 
+.menu a {
+  text-decoration: none;
+  color: var(--BackgroundColor);
+}
+
+.menu li {
+  color: var(--BackgroundColor);
+}
+
 .logotype {
   font-family: "Caveat", cursive;
   font-size: 3rem;
   color: var(--BackgroundColor);
+  opacity: 0.9;
 }
 
 /* footer */
