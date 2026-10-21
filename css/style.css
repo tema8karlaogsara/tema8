@@ -79,6 +79,14 @@
 
 /************************************* produktliste ***********************************/
 
+.produktliste-overskrift {
+  font-family: "Paytone One";
+  color: var(--PlumColor);
+  margin-block: 100px;
+  margin-inline: 50px;
+  font-size: 1.8rem;
+}
+
 .productlist_container {
   margin-block: 50px;
   margin-inline: 25px;
@@ -86,13 +94,30 @@
 }
 
 .product {
-  padding: 30px;
-  background-color: var(--CardColor);
+  padding: 5px;
+  background-color: var(--SingeviewBoxColor);
 }
 
-.product h1 {
+.product h2 {
   margin-block: 20px;
-  font-family: "Paytone One";
+  font-family: "Caveat", Cursive;
+  font-size: 1.3rem;
+  color: var(--PlumColor);
+}
+
+.filter-btn {
+  border: none;
+  width: 100px;
+  margin-inline: 20px;
+  cursor: pointer;
+  font-family: "Caveat", Cursive;
+  font-size: 1.4rem;
+  color: var(--PlumColor);
+}
+
+.btn_container {
+  justify-self: center;
+  margin-block: 50px;
 }
 
 @media (min-width: 800px) {
@@ -100,5 +125,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
+  }
+
+  .btn_container {
+    justify-self: left;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  .produktliste-overskrift {
+    font-size: 3rem;
   }
 }
