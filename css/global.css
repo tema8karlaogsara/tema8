@@ -176,7 +176,7 @@ nav {
 .logotype {
   font-family: "Caveat", cursive;
   font-size: 3rem;
-  color: var(--PlumColor);
+  color: var(--BackgroundColor);
 }
 
 /* footer */

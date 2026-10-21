@@ -41,9 +41,11 @@ function showProducts(recipes) {
     listContainer.innerHTML += `
   
                 <article class="product">
-  
+
+                    <a href="singleview.html">
                     <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="billede">
-  
+                    </a>
+                    
                     <h2>${recipe.name}</h2>
                     
                     
