@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <script src="javascript/index.js" defer></script>
+    <script src="javascript/burger.js" defer></script>
+    <script src="javascript/productlist.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+    <title>Produktliste</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="logo.svg" alt="Logo">
+            </a>
+
+            <div class="logotype">
+                Spis Nu
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="productlist.html">Opskrifter</li></a>
+                    <li>Nyhedsbrev</li>
+                </ul>
+
+                <button class="burger" aria-label="menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1 class="produktliste-overskrift">Opskrifter til din hverdag</h1>
+
+        <div class="btn_container">
+            <button data-filter="0-35" class="filter-btn"> <img src="logo.svg" alt="ur"> 0-35 min.</button>
+            <button data-filter="40-60" class="filter-btn"> <img src="logo.svg" alt="ur"> 40-60 min.</button>
+            <button data-filter="60+" class="filter-btn"> <img src="logo.svg" alt="ur"> 60+ min.</button>
+        </div>
+
+        <section class="productlist_container">
+
+            <!-- <article class="product">
+                <a href="singleview.html">
+                    <img src="img/forside_billede.webp" alt="billede">
+                </a>
+                <h2>Overskrift</h2>
+
+            </article> -->
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Tilmeld nyhedsbrev</p>
+    </footer>
+
+</body>
+
+</html>
