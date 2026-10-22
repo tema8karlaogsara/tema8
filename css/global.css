@@ -182,6 +182,9 @@ nav {
 /* footer */
 footer {
   background-color: var(--HeaderFooterColor);
+  color: var(--SingeviewBoxColor);
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
   padding: 30px;
 }
 
