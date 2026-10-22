@@ -42,13 +42,13 @@ function showProducts(recipes) {
   
                 <article class="product">
 
-                    <a href="singleview.html">
+                    <a href="singleview.html?id=${recipe.id}">
                     <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="billede">
                     </a>
                     
                     <h2>${recipe.name}</h2>
                     
-                    
+
   
                 </article>
     `;

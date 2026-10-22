@@ -8,9 +8,9 @@ const selectedID = param.get("id");
 console.log("selectedID", selectedID);
 
 // API-url'en til ét enkelt produkt, med id'et sat ind til sidst
-const detailURL = `https://dummyjson.com/recipes`;
+const recipesURL = `https://dummyjson.com/recipes`;
 // Test i konsollen: tjek at url'en ser rigtig ud
-console.log("detailURL", detailURL);
+console.log("recipesURL", recipesURL);
 
 // Henter data om produktet fra API'et
 function loadData(url) {
@@ -27,7 +27,7 @@ function loadData(url) {
 const productContainer = document.querySelector(".card product_page");
 
 // Tømmer containeren, så der ikke ligger noget gammelt indhold i den
-productContainer.innerHTML = "";
+// productContainer.innerHTML = "";
 
 // Viser detaljerne for det valgte produkt
 function showDetails(recipes) {
@@ -54,8 +54,8 @@ function showDetails(recipes) {
             <button>Gem som favorit</button>`;
 
   // Sætter billedets src igen (det er faktisk allerede sat i HTML'en ovenfor)
-  document.querySelector(".card-image").src = "https://cdn.dummyjson.com/recipe-images/${recipes.image}.webp";
+  //   document.querySelector(".card-image").src = "https://cdn.dummyjson.com/recipe-images/${recipes.image}.webp";
 }
 
 // Starter det hele ved at hente produktdata fra API'et
-loadData(detailURL);
+loadData(recipesURL);
